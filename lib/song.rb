@@ -20,7 +20,7 @@ class Song
     def self.artists
         @@artists << @name
     end
-    
+    binding.pry
 
     def self.genres
         @@genres << @genre
