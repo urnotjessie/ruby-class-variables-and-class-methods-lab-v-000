@@ -24,14 +24,15 @@ class Song
         end
     end
 
+    
+    def self.count
+        @@count
+    end
+    
     def self.artists
         @@artists.each do |artist|
             @@artist_count[artist] += 1
         end
-    end
-
-    def self.count
-        @@count
     end
 
 
