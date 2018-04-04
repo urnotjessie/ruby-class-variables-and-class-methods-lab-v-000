@@ -13,17 +13,15 @@ class Song
         @name = name
         @artist = artist
         @genre = genre
-        @@count += 1
-        @@artists << name if !@@artists.include?(artist)
-        @@genres << genre if !@@genres.include?(genre)
-        @@genres.each do |genre|
-            @@genre_count[genre] += 1
-        end
-        @@artists.each do |artist|
-            @@artist_count[artist] += 1
-        end
-
-
+    end
+    @@count += 1
+    @@artists << name if !@@artists.include?(artist)
+    @@genres << genre if !@@genres.include?(genre)
+    @@genres.each do |genre|
+        @@genre_count[genre] += 1
+    end
+    @@artists.each do |artist|
+        @@artist_count[artist] += 1
     end
 
 
