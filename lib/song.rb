@@ -18,7 +18,7 @@ class Song
     end
 
     def self.artists
-        @@artists << @name
+        @@artists << 1
     end
     binding.pry
 
