@@ -20,10 +20,6 @@ class Song
     end
 
 
-    def self.genres
-        
-    end
-
     def self.genre_count
         @@genres.each do |genre|
             @@genre_count[genre] += 1
