@@ -13,7 +13,10 @@ class Song
         @@count += 1
         @@artists << name if !@@artists.include?(artist)
         @@genres << genres if !@@genres.include?(genre)
-        # @@genre_count << genre
+
+        @@genres.each do |genre|
+            @@genre_count[genre] += 1
+        end
 
         @name = name
         @artist = artist
